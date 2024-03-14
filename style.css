@@ -35,6 +35,9 @@ z-index: -1; /* Para ficar atras do conteÃºdo principal */
   margin-right: 10px;
   text-decoration: none;
 }
+.button:hover{
+  border-bottom: 2px solid black;
+}
 .tema-claro {
   background-color: #fff;
   color: #000;
