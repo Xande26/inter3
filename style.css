@@ -1,23 +1,41 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body{
   font-family: Arial;
 }
 header{
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 20px;
+  top: 10px;
     padding: 10px; /* Espaçamento interno */
-    backdrop-filter: blur(15px); /* Aplicação de desfoque */
+    backdrop-filter: blur(10px); /* Aplicação de desfoque */
   z-index: -1;
   padding: 10px 20px;
+  
+
+  background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .navebar{
-  height: 40px; /* Define a altura da navbar */
+  height: 60px; /* Define a altura da navbar */
   padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#logo{
-  margin-right: 20px;
+.logo{
+  position: relative;
+  width: 50px; 
+    height: auto; 
+  right: 20px;
+  transform: scale(0.8);
+  margin-top: -30px;
+top: 0px;
 }
 .button{
   font-weight: bold;
@@ -27,6 +45,7 @@ header{
   text-decoration: none;
   border-radius: 5px;
   margin-right: 10px;
+
 }
 .button:hover{
   border-bottom: 2px solid #8E1818;
@@ -45,8 +64,25 @@ header{
 }
 .mySlides {
   display: none;
+  img{
+    width: 80px; 
+    height: 1000px; 
+  }
 }
-
+#alternar-tema {
+  
+  top: relative;
+  width: -15px;
+  font-size: 30px;
+    padding: 20px 20px; /* Define o preenchimento interno do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave ao alterar as cores */
+  height: -15px;
+  color: rgb(56, 48, 48);
+  border-radius: 20px;
+  margin: 20px;
+}
 .fade {
   animation-name: fade;
   animation-duration: 3s;
@@ -80,4 +116,35 @@ header{
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.slideshow{
+  position: relative;
+  z-index: 1;
+}
+.convenio{
+  width: 200px;
+  height: 100px;
+}
+.logo-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  top: 100px;
+  background-color: #ccc;
+  border-radius: 25px;
+  padding: 25px;
+  display: inline-block;
+}
+.pc {
+  text-align: center;
+  font-size: large;
+
+}
+.pcz {
+  text-align: center;
+  font-size: small;
 }
