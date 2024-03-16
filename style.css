@@ -149,5 +149,5 @@ top: 0px;
   font-size: small;
 }
 .button.ativo {
-  background-color: #8E1818; /* Cor de fundo quando o link está ativo */
+  background-color: red; /* Cor de fundo quando o link está ativo */
 }
