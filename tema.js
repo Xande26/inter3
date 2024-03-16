@@ -54,3 +54,25 @@ document.addEventListener("DOMContentLoaded", function() {
     // Verificar o tema ao carregar a página
     verificarTema();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtém o pathname da URL atual (parte da URL após o domínio)
+    var pathname = window.location.pathname;
+
+    // Verifica qual é a página atual e adiciona a classe "ativo" ao link correspondente
+    if (pathname.includes("home.html")) {
+        document.getElementById("link-home").classList.add("ativo");
+    } else if (pathname.includes("exames.html")) {
+        document.getElementById("link-exames").classList.add("ativo");
+    } else if (pathname.includes("convenios.html")) {
+        document.getElementById("link-convenios").classList.add("ativo");
+    } else if (pathname.includes("medicos.html")) {
+        document.getElementById("link-medicos").classList.add("ativo");
+    } else if (pathname.includes("especialidades.html")) {
+        document.getElementById("link-especialidades").classList.add("ativo");
+    } else if (pathname.includes("fale_conosco.html")) {
+        document.getElementById("link-fale-conosco").classList.add("ativo");
+    } else if (pathname.includes("a_clinica.html")) {
+        document.getElementById("link-a-clinica").classList.add("ativo");
+    }
+});
